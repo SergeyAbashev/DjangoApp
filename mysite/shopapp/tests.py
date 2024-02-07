@@ -139,5 +139,6 @@ class ProductsExportViewTestCase(TestCase):
             expected_data,
         )
 
+
 class OrderExportViewTestCase(TestCase):
     pass
