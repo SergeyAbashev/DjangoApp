@@ -138,3 +138,6 @@ class ProductsExportViewTestCase(TestCase):
             products_data["products"],
             expected_data,
         )
+
+class OrderExportViewTestCase(TestCase):
+    pass
