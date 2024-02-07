@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 from django.test import TestCase
 from django.urls import reverse
 
-from shopapp.models import Product
-from shopapp.utils import add_two_numbers
+from models import Product
+from utils import add_two_numbers
 
 
 class AddTwoNumbersTestCase(TestCase):
