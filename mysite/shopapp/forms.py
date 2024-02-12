@@ -1,6 +1,6 @@
 from django import forms
 
-from shopapp.models import Product
+from .models import Product
 
 
 class ProductForm(forms.ModelForm):
@@ -8,9 +8,9 @@ class ProductForm(forms.ModelForm):
         model = Product
         fields = "name", "price", "description", "discount", "preview"
 
-    images = forms.ImageField(
-        widget=forms.ClearableFileInput(attrs={"multiple": True}),
-    )
+    # images = forms.ImageField(
+    #     widget=forms.ClearableFileInput(attrs={"multiple": True}),
+    # )
 
 
 class CSVImportForm(forms.Form):
